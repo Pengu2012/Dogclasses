@@ -7,12 +7,12 @@ pygame.display.update()
 screen.fill("white")
 
 class Circle():
-    def __init__(self,rgb,pos,radius,):
+    def __init__(self,rgb,pos,radius):
         self.rgb = rgb
         self.pos = pos
         self.radius = radius
     def display(self):
-        pygame.draw.circle(screen,self.rgb,self.pos,self.radius,)
+        pygame.draw.circle(screen,self.rgb,self.pos,self.radius)
 
 redcircle = Circle((255,0,45),(545,250),70)
 redcircle.display()
